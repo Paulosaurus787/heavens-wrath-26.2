@@ -1,0 +1,49 @@
+Heaven's Wrath fuer Minecraft 26.2 (Fabric, nur Client)
+
+=== So bekommst du die .jar ===
+1. Kostenloses Konto auf github.com, dann "New repository" (z. B. "heavens-wrath-26.2").
+2. ZIP entpacken und ALLE Dateien/Ordner hochladen (Add file > Upload files),
+   auch den versteckten Ordner ".github" (sonst startet der Build nicht).
+3. Reiter "Actions" oeffnen, den Lauf "Build" abwarten (ca. 3 Minuten).
+4. Auf den Lauf klicken, unten bei "Artifacts" "heavens-wrath-26.2-jar" herunterladen.
+5. In der ZIP liegt die .jar -> im NoRisk Client zum Profil hinzufuegen.
+   Das Profil braucht Fabric + Fabric API fuer 26.2 (Java 25).
+
+=== Menue oeffnen ===
+Taste K (in den Tasteneinstellungen unter "Heaven's Wrath" aenderbar) oder /killeffect.
+Es oeffnet sich ein eigenes Fenster mit 4 Seiten: Effekte, Items, Sounds, Battle Pass.
+Oben waehlst du eines von 5 Profilen. Jedes Profil merkt sich Effekt, Item, Sound,
+Assist-Skin und Koerper-Einstellung. Unten: Effekt AN/AUS, Koerper steht/loest auf,
+Assist-Skin (ich oder ein Spieler, der gerade auf dem Server ist), Fertig.
+
+=== Battle Pass ===
+Jeder Kill auf einen Spieler zaehlt. Alle 10 Kills schaltest du einen neuen Kill-Effekt frei.
+Kills und Freischaltungen werden in config/heavens_wrath.properties gespeichert und bleiben
+nach einem Neustart erhalten (nicht loeschen, sonst ist der Fortschritt weg).
+    10 Kills  ziege   Eine Ziege rammt ihn weg
+    20 Kills  lama    Ein Lama spuckt ihn weg
+    30 Kills  assist  Mace: Ein Fake-Spieler kommt aus dem Himmel und schlaegt mit dem Mace zu.
+                      Schwert: Ein Fake-Spieler rennt heran und rammt das Schwert durch ihn.
+                      (Mit anderen Waffen faellt die normale Waffe.)
+    40 Kills  warden  Sonic Boom schiesst ihn weg
+    50 Kills  golem   Eisengolem schleudert ihn zum Mond
+    60 Kills  blitz   Drei Blitze schlagen ein
+    70 Kills  meteor  Ein brennender Magmablock-Meteor schlaegt ein
+    80 Kills  engel   Eine Lichtsaeule traegt ihn hinauf
+Frei von Anfang an: "waffe" (deine Waffe kracht vom Himmel).
+Hinweis: Die Datei ist ein einfacher Text, du kannst "kills" dort selbst aendern.
+
+=== Chat-Befehle (gehen weiterhin) ===
+/killeffect            -> Fenster oeffnen
+/killeffect an | aus
+/killeffect modus <name> | item <name> | koerper stehen|aufloesen
+/killeffect profil 1..5
+/killeffect pass       -> Stand des Battle Pass im Chat
+/killsound             -> Fenster, Seite Sounds (Klick spielt den Sound zur Probe)
+Sounds: wither (Standard), wither_tod, donner, blitz, drache, drachen_tod, amboss,
+        warden, dreizack, kombi (Donner + Blitz + Amboss + Wither), aus
+
+Alle Einstellungen werden gespeichert (config/heavens_wrath.properties).
+Es wird nichts ins Internet gesendet.
+
+Bei einem roten Fehler im Lauf: Fehlermeldung kopieren und mir schicken.
